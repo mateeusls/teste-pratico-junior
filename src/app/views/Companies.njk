@@ -1,0 +1,28 @@
+{% extends "./layout.njk" %}
+{% block title %} <title>Matheus Company | Users</title> {% endblock %}
+{% block css %}
+	<link rel="stylesheet" href="styles/users.css">
+{% endblock %}
+{% block content %}
+	<div class="content">
+		{% include "./fields/aside.njk" %}
+		<main>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Password</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+							<td>Essa</td>
+							<td>Compania</td>
+							<td>Isso ai</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+	</div>
+{% endblock %}

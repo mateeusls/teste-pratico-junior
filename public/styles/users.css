@@ -1,0 +1,75 @@
+.content {
+	max-width: 70rem;
+	margin: 0 auto;
+	height: 100vh;
+	padding: 2rem 1rem;
+
+	display: flex;
+	gap: 2rem;
+}
+
+.profile {
+	background: #29292E;
+	padding: 2rem 3rem;
+	border-radius: 8px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.profile img {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+
+.profile .profile-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border-top: 1px solid gray;
+	width: 100%;
+}
+
+.profile .profile-info span {
+	margin-top: 1rem;
+}
+
+.profile .profile-info p {
+	color: #8D8D99;
+}
+
+main {
+	flex: 1;
+}
+
+main table {
+	width: 100%;
+	border-spacing: 0 0.5rem;
+	background: #29292E;	
+	border-radius: 8px;
+}
+
+main table th {
+	color: #8D8D99;
+	font-weight: 400;
+	padding: 1rem 2rem;
+	text-align: left;
+	line-height: 1.5rem;
+	border-bottom: 1px solid #8D8D99;
+}
+
+main table td {
+	padding: 1rem 2rem;
+}
+
+main table td:first-child {
+	border-radius: 0.25rem 0 0 0.25rem;
+}
+
+main table td:last-child {
+	border-radius: 0 0.25rem 0.25rem 0 ;
+}

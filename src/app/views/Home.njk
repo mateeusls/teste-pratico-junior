@@ -1,0 +1,29 @@
+{% extends "./layout.njk" %}
+{% block title %} <title>Matheus Company | Home</title> {% endblock %}
+{% block css %}
+	<link rel="stylesheet" href="styles/home.css">
+{% endblock %}
+{% block content %}
+	<div class="content">
+		<div class="form-container">
+			<h2>Welcome to Mateus Company</h2>
+			<form action="#">
+				<div class="email-container">
+					<div>
+						<label for="email">Email</label>
+					</div>
+					<input type="text" id="email" placeholder="Email">
+				</div>
+
+				<div class="password-container">
+					<div>
+						<label for="password">Password</label>
+					</div>
+					<input type="text" id="password" placeholder="Password">
+				</div>
+
+				<button type="submit">Log in</button>
+			</form>
+		</div>
+	</div>
+{% endblock %}
