@@ -1,11 +1,11 @@
 .content {
-	max-width: 70rem;
+	max-width: 110rem;
 	margin: 0 auto;
 	height: 100vh;
 	padding: 2rem 1rem;
 
 	display: flex;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .profile {
@@ -42,6 +42,16 @@
 	color: #8D8D99;
 }
 
+.profile  a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.profile a:hover {
+	border-bottom: 1px solid gray;
+}
+
 main {
 	flex: 1;
 }
@@ -56,14 +66,24 @@ main table {
 main table th {
 	color: #8D8D99;
 	font-weight: 400;
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	text-align: left;
 	line-height: 1.5rem;
 	border-bottom: 1px solid #8D8D99;
 }
 
 main table td {
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
+	border-bottom: 1px solid #8D8D99;
+}
+
+main table td a {
+	color: #8D8D99;
+	text-decoration: none;
+}
+
+main table td a:hover {
+	border-bottom: 1px solid #8D8D99;
 }
 
 main table td:first-child {

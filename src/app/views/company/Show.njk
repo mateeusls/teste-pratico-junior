@@ -1,0 +1,41 @@
+{% extends "../layout.njk" %}
+{% block title %} <title>Matheus Company | Companies</title> {% endblock %}
+{% block css %}
+	<link rel="stylesheet" href="/styles/main.css">
+{% endblock %}
+{% block content %}
+	<div class="content">
+		<aside>
+			{% include "../Fields.njk" %}
+		</aside>
+		<main>
+			<table>
+				<thead>
+					<tr>
+						<th>Nome Fantasia</th>
+						<th>E-mail comercial</th>
+						<th>Telefone</th>
+						<th>CNPJ</th>
+						<th>Data de registro</th>
+						<th>cep</th>
+						<th>Endereço</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+							<td>{{ company.name }}</td>
+							<td>{{ company.email }}</td>
+							<td>{{ company.phone }}</td>
+							<td>{{ company.cnpj }}</td>
+							<td>{{ company.date_register }}</td>
+							<td>{{ company.cep }}</td>
+							<td>{{ company.address }}</td>
+							<td>
+								<a href="/companies/{{ company.id }}/edit">Editar Empresa</a>
+							</td>
+						</tr>
+				</tbody>
+			</table>
+		</main>
+	</div>
+{% endblock %}

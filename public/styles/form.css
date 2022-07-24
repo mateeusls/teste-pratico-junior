@@ -1,0 +1,79 @@
+.content {
+	max-width: 110rem;
+	margin: 0 auto;
+	height: 100vh;
+	padding: 2rem 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-details {
+	background: #8D8D99;
+	padding: 2rem 3rem;
+	border-radius: 8px;
+	color: black;
+}
+
+.form-details h1 {
+	margin-bottom: 1rem;
+}
+
+.form-details .item {
+	margin-bottom: 1rem;
+}
+
+.form-details .item h3 {
+	margin-bottom: 0.25rem;
+}
+
+.form-details .item input {
+	margin-top: 0.25rem;
+	padding: 0.5rem;
+	border: 1px solid #C4C4CC;
+	border-radius: 8px;
+}
+
+.form-details input::placeholder {
+	color: #C4C4CC;
+}
+
+.form-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-details button {
+	padding: 0.5rem 4rem;
+	border-radius: 8px;
+	border: none;
+	background: blue;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+
+	transition: filter 100ms;
+}
+
+.form-details button[type="submit"]:hover {
+	filter: brightness(0.8);
+}
+
+.form-buttons .button-delete {
+	padding: 0.5rem 4rem;
+	border-radius: 8px;
+	border: none;
+	background: red;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+
+	transition: filter 100ms;
+}
+
+.button-delete:hover {
+	filter: brightness(0.8);
+}
+

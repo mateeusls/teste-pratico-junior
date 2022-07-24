@@ -1,26 +1,30 @@
 {% extends "./layout.njk" %}
-{% block title %} <title>Matheus Company | Users</title> {% endblock %}
+{% block title %} <title>Matheus Company | Companies</title> {% endblock %}
 {% block css %}
-	<link rel="stylesheet" href="styles/users.css">
+	<link rel="stylesheet" href="styles/main.css">
 {% endblock %}
 {% block content %}
 	<div class="content">
-		{% include "./fields/aside.njk" %}
+		{% include "./Fields.njk" %}
 		<main>
 			<table>
 				<thead>
 					<tr>
-						<th>Name</th>
-						<th>Email</th>
-						<th>Password</th>
+						<th>Nome Fantasia</th>
+						<th>E-mail comercial</th>
+						<th>Telefone</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-							<td>Essa</td>
-							<td>Compania</td>
-							<td>Isso ai</td>
-					</tr>
+					{% for company in companies %}
+						<tr>
+							<td>
+								<a href="/companies/{{ company.id }}">{{ company.name }}</a>
+							</td>
+							<td>{{ company.email }}</td>
+							<td>{{ company.phone }}</td>
+						</tr>
+					{% endfor %}
 				</tbody>
 			</table>
 		</main>

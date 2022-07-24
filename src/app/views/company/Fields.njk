@@ -1,0 +1,87 @@
+<div class="item">
+  <h3>Nome Fantasia</h3>
+  <div>
+    <input
+      type="text"
+      name="name"
+      value="{{ company.name }}"
+      placeholder="Nome da empresa"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>CNPJ</h3>
+  <div>
+    <input
+      type="number"
+      name="cnpj"
+      value="{{ company.cnpj }}"
+      placeholder="CNPJ"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>Data de Fundação</h3>
+  <div>
+    <input
+      type="date"
+      name="date_register"
+      value="{{ company.date_register }}"
+      placeholder="00/00/0000"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>E-mail comercial</h3>
+  <div>
+    <input
+      type="email"
+      name="email"
+      value="{{ company.email }}"
+      placeholder="Email"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>Contato</h3>
+  <div>
+    <input
+      type="tel"
+      name="phone"
+      value="{{ company.phone }}"
+      placeholder="Telefone"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>CEP</h3>
+  <div>
+    <input
+      id="cep"
+      type="tel"
+      name="cep"
+      value="{{ company.cep }}"
+      placeholder="CEP"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>Endereço</h3>
+  <div>
+    <input
+      id="address"
+      type="text"
+      name="address"
+      value="{{ company.address }}"
+      placeholder="Endereço"
+    >
+  </div>
+</div>
+
+<script src="/script.js"></script>
