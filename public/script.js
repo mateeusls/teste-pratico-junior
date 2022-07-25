@@ -1,4 +1,3 @@
-
 function searchCep() {
 	let cep = document.getElementById("cep").value
 	if(cep != '') {
@@ -20,7 +19,6 @@ function searchCep() {
 		}
 	}
 }
-
 window.onload = function() {
 	cep.addEventListener("blur", searchCep)
 }

@@ -1,0 +1,54 @@
+<div class="item">
+  <h3>Nome</h3>
+  <div>
+    <input
+      type="text"
+      name="name"
+      value="{{ user.name }}"
+      placeholder="Nome completo"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>E-mail</h3>
+  <div>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      value="{{ user.email }}"
+      placeholder="Email"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>Senha</h3>
+  <div>
+    <input
+      id="password"
+      type="password"
+      name="password"
+      value="{{ user.password }}"
+      minlength="7"
+      placeholder="Digite sua senha"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <h3>Confirmar senha</h3>
+  <div>
+    <input
+      id="passwordConfirm"
+      type="password"
+      name="password_confirm"
+      value="{{ user.password_confirm }}"
+      minlength="7"
+      placeholder="Confirme sua senha"
+    >
+  </div>
+</div>
+
+<script src="/script.js"></script>

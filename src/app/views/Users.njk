@@ -16,13 +16,15 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						{% for user in users %}
-							<td>{{user.name}}</td>
+					{% for user in users %}
+						<tr>
+							<td>
+								<a href="/users/{{ user.id }}">{{ user.name }}</a>
+							</td>
 							<td>{{user.email}}</td>
 							<td>{{user.password}}</td>
-						{% endfor %}
-					</tr>
+						</tr>
+					{% endfor %}
 				</tbody>
 			</table>
 		</main>

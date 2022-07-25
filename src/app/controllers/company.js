@@ -1,10 +1,9 @@
-const { date } = require("../lib/utils")
+const { date, phoneFormatted, cepFormatted, cnpjFormatted } = require("../lib/utils")
 const Companies = require("../models/Companies")
 
 module.exports = {
 	index(req, res) {
 		Companies.all((companies) => {
-      
       return res.render("Companies", { companies })
 		})
 	},
@@ -19,7 +18,6 @@ module.exports = {
         return res.send("Please, fill all fields!");
       }
     }
-
     Companies.create(req.body, (company) => {
       return res.redirect(`/companies/${company.id}`);
     });
@@ -51,6 +49,9 @@ module.exports = {
       if (!company) return res.send("Company not found!");
 
       company.date_register = date(company.date_register).format
+      company.phone = phoneFormatted(company.phone)
+      company.cnpj = cnpjFormatted(company.cnpj)
+      company.cep = cepFormatted(company.cep)
 
       res.render(`company/Show`, { company });
     });

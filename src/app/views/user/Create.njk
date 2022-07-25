@@ -1,0 +1,20 @@
+{% extends "../layout.njk" %}
+{% block css %}
+	<link rel="stylesheet" href="/styles/form.css">
+{% endblock %}
+{% block title %}
+  <title>Matheus Company | Cadastrar Usuário</title>
+{% endblock %}
+{% block content %}
+  <div class="content">
+    <div class="create-wrapper" >
+      <form class="form-details" action="/users" method="post">
+        <header>
+          <h1>Novo Usuário</h1>
+        </header>
+        {% include "./Fields.njk" %}
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}

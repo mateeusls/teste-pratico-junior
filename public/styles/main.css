@@ -1,8 +1,7 @@
 .content {
 	max-width: 110rem;
 	margin: 0 auto;
-	height: 100vh;
-	padding: 2rem 1rem;
+	padding: 0 1rem;
 
 	display: flex;
 	gap: 1rem;
@@ -10,7 +9,7 @@
 
 .profile {
 	background: #29292E;
-	padding: 2rem 3rem;
+	padding: 2rem;
 	border-radius: 8px;
 
 	display: flex;
@@ -64,7 +63,7 @@ main table {
 }
 
 main table th {
-	color: #8D8D99;
+	color: white;
 	font-weight: 400;
 	padding: 1rem 1rem;
 	text-align: left;
@@ -78,7 +77,7 @@ main table td {
 }
 
 main table td a {
-	color: #8D8D99;
+	color: gray;
 	text-decoration: none;
 }
 

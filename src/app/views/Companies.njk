@@ -23,6 +23,12 @@
 							</td>
 							<td>{{ company.email }}</td>
 							<td>{{ company.phone }}</td>
+							<td>
+								<form id="form-delete" class="form" action="/companies?_method=DELETE" method="post">
+									<input type="hidden" name="id" value="{{ company.id }}"/>
+								</form>
+								<button class="button-delete" form="form-delete" type="submit">Deletar Empresa</button>
+							</td>
 						</tr>
 					{% endfor %}
 				</tbody>
